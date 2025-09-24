@@ -1,3 +1,5 @@
+// Q4: Write a program to calculate the area and circumference of a circle given its radius.
+
 #include <stdio.h>
 #define pi 3.14159  // We have to define constant for p
 

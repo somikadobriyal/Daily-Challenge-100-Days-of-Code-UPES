@@ -1,39 +1,23 @@
+// Q3: Write a program to calculate the area and perimeter of a rectangle given its length and breadth.
+
 #include <stdio.h>
+#define pi 3.14159  // We have to define constant for p
 
-int main()
- {
-    int num1, num2;
-    int sum, difference, product;
-    float quotient;
+int main() 
+{
+    float radius, area, circum;
 
-    // Enter the first number
-    printf("Enter first number: ");
-    scanf("%d", &num1);
+    // Enter the radius
+    printf("Enter the radius of the circle: ");
+    scanf("%f", & radius);
 
-    // Enter the second number
-    printf("Enter second number: ");
-    scanf("%d", &num2);
+    // Calculate area and circumference of the circle
+    area = pi * radius * radius;
+    circum = 2 * pi * radius;
 
-    // Calculate the sum, difference, product, and quotient
-    sum = num1 + num2;
-    difference = num1 - num2;
-    product = num1 * num2;
-
-    // Check if the number is divisible by zero
-    if (num2 != 0) 
-    {
-        quotient = (float)num1 / num2;
-        printf("Quotient is = %.2f\n", quotient);
-    } 
-    else 
-    {
-        printf("Quotient is = Undefined (division by zero)\n");
-    }
-
-    // Print the results
-    printf("Sum Of The Number is = %d\n", sum);
-    printf("Difference Of The Number is = %d\n", difference);
-    printf("Product Of The Number is = %d\n", product);
+    // Print the area and the circumference
+    printf("Area of the circle is = %.2f\n", area);
+    printf("Circumference of the circle is = %.2f\n", circum);
 
     return 0;
 }
