@@ -1,4 +1,4 @@
- #include <stdio.h>
+#include <stdio.h>
 
 int main()
  {
@@ -27,7 +27,7 @@ int main()
     } 
     else 
     {
-        printf("Quotient = Undefined (division by zero)\n");
+        printf("Quotient is = Undefined (division by zero)\n");
     }
 
     // Print the results
